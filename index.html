@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <title>Shifts</title>
+	    <style>
+	    	body {
+	    		background-color: #EEE;
+	    		width: 465px;
+	    		font-family: sans-serif;
+	    		color: #373737;
+	    	}
+
+	    	.light-text {
+	    		color: #9A9A9A;
+	    	}
+
+	    	.card {
+	    		background-color: white;
+	    		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	    		margin-bottom: 10px;
+	    	}
+
+	    	.card .left {
+	    		width: 59%;
+	    		height: 100%;
+	    		float: left;
+	    		box-sizing: border-box;
+	    		margin: 10px 0;
+	    	}
+
+	    	.card .right {
+	    		width: 41%;
+	    		height: 100%;
+	    		float: right;
+	    		box-sizing: border-box;
+	    	}
+
+	    	.card .row.first {
+	    		height: 47%;
+	    	}
+
+	    	.card .row.first .left {
+	    		border-right: 1px solid #CCC;
+	    	}
+
+	    	.card .row.second {
+	    		height: 53%;
+	    		padding: 0 10px;
+	    	}
+
+	    	.card .row.second .inner {
+	    		border-top: 1px solid #CCC;
+	    		height: 100%;
+	    		padding: 20px 0;    		
+	    	}
+
+	    	.sticker {
+	    		width: 60px;
+	    		height: 60px;
+	    		margin: 5px 15px;
+	    		border-radius: 30px;
+	    		color: white;
+	    		line-height: 60px;
+	    		text-align: center;
+	    		font-size: 27px;
+	    		float: left;
+	    	}
+
+	    	.who {
+	    		float: left;
+	    		margin-top: 10px;
+	    		font-size: 19px;
+	    	}
+
+	    	.who .status {
+	    		font-size: 16px;
+	    	}
+
+	    	.whomwith {
+	    		padding: 25px 0 0 30px ;
+	    	}
+
+	    	.whomwith div {
+	    		height: 25px;
+	    	}
+
+	    	.from {
+	    		float: left;
+	    	}
+
+	    	.from .time {
+	    		font-size: 30px;
+	    		margin-left: 70px;
+	    	}
+
+	    	.from .arrow {
+	    		font-size: 30px;
+	    		margin-left: 25px;
+	    		color: #9A9A9A;
+	    	}
+
+	    	.from .date {
+	    		margin-left: 120px;
+	    	}
+
+	    	.to {
+	    		float: right;
+	    		width: 41%;
+	    	}
+
+	    	.to .time {
+	    		font-size: 30px;
+	    		margin-left: 15px;
+	    	}
+
+	    	.to .date {
+	    		margin-left: 50px;
+	    	}
+
+	    	.status {
+	    		margin-top: 5px;
+	    	}
+
+	    	.red {
+	    		background-color: rgb(168, 5, 55);
+	    	}
+
+	    	.grey {
+	    		background-color: rgb(20, 157, 152);
+	    	}
+
+	    	.green {
+	    		background-color: rgb(21, 149, 5);
+	    	}
+
+	    	.status {
+	    		text-transform: uppercase;
+	    	}
+
+	    	.clear {
+	    		clear: both;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="row first">
+				<div class="left">
+					<div class="sticker red">
+						AD
+					</div>
+					<div class="who">
+						<div class="name">Ashley Donaldson</div>
+						<div class="status light-text">primary</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="whomwith">
+						<div>David Anderson</div>
+						<div>Julie Acuff</div>
+					</div>	
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="row second">
+				<div class="inner">
+					<div class="from">
+						<span class="time">12:00</span> AM <span class="arrow">&rarr;</span>
+						<div class="date">5/10/17</div>
+					</div>
+					<div class="to">
+						<span class="time">8:00</span> AM
+						<div class="date">5/10/17</div>
+					</div>	
+					<div class="clear"></div>								
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="row first">
+				<div class="left">
+					<div class="sticker grey">
+						SA
+					</div>
+					<div class="who">
+						<div class="name">Sammual Anderson</div>
+						<div class="status light-text">primary</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="whomwith">
+						<div>Julie Acuff</div>
+					</div>	
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="row second">
+				<div class="inner">
+					<div class="from">
+						<span class="time">8:00</span> AM <span class="arrow">&rarr;</span>
+						<div class="date">5/10/17</div>
+					</div>
+					<div class="to">
+						<span class="time">4:00</span> PM
+						<div class="date">5/10/17</div>
+					</div>	
+					<div class="clear"></div>								
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="row first">
+				<div class="left">
+					<div class="sticker green">
+						JA
+					</div>
+					<div class="who">
+						<div class="name">Julie Acuff</div>
+						<div class="status light-text">primary</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="whomwith">
+						<div>David Anderson</div>
+						<div>Ashley Donaldson</div>
+					</div>	
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="row second">
+				<div class="inner">
+					<div class="from">
+						<span class="time">4:00</span> PM <span class="arrow">&rarr;</span>
+						<div class="date">5/10/17</div>
+					</div>
+					<div class="to">
+						<span class="time">12:00</span> AM
+						<div class="date">5/10/17</div>
+					</div>	
+					<div class="clear"></div>								
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
