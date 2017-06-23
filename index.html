@@ -4,11 +4,18 @@
 	    <meta charset="utf-8">
 	    <title>Shifts</title>
 	    <style>
+            div#container {
+                width: 100%;
+            }
+
 	    	body {
 	    		background-color: #EEE;
-	    		width: 465px;
+                /*overflow: hidden;*/
 	    		font-family: sans-serif;
 	    		color: #373737;
+                min-width: 320px;
+                max-width: 465px;
+                font-size: 16px;
 	    	}
 
 	    	.light-text {
@@ -56,25 +63,32 @@
 	    	}
 
 	    	.sticker {
-	    		width: 60px;
-	    		height: 60px;
+	    		width: 2.22em;
+	    		height: 2.22em;
 	    		margin: 5px 15px;
-	    		border-radius: 30px;
+	    		border-radius: 1.11em;
 	    		color: white;
-	    		line-height: 60px;
+	    		line-height: 2.22em;
 	    		text-align: center;
-	    		font-size: 27px;
+	    		font-size: 1.69em;
 	    		float: left;
 	    	}
 
 	    	.who {
 	    		float: left;
 	    		margin-top: 10px;
-	    		font-size: 19px;
+	    		font-size: 1.19em;
+                max-width: 60%;
 	    	}
 
+            .who .name {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
 	    	.who .status {
-	    		font-size: 16px;
+	    		font-size: 0.83em;
 	    	}
 
 	    	.whomwith {
@@ -90,12 +104,12 @@
 	    	}
 
 	    	.from .time {
-	    		font-size: 30px;
-	    		margin-left: 70px;
+	    		font-size: 1.88em;
+	    		margin-left: 2.33em;
 	    	}
 
 	    	.from .arrow {
-	    		font-size: 30px;
+	    		font-size: 1.88em;
 	    		margin-left: 25px;
 	    		color: #9A9A9A;
 	    	}
@@ -105,17 +119,17 @@
 	    	}
 
 	    	.to {
-	    		float: right;
-	    		width: 41%;
+	    		float: left;
+	    		/*width: 41%;*/
 	    	}
 
 	    	.to .time {
-	    		font-size: 30px;
-	    		margin-left: 15px;
+	    		font-size: 1.88em;
+	    		margin-left: 45px;
 	    	}
 
 	    	.to .date {
-	    		margin-left: 50px;
+	    		margin-left: 80px;
 	    	}
 
 	    	.status {
@@ -141,108 +155,157 @@
 	    	.clear {
 	    		clear: both;
 	    	}
+
+            @media (max-width: 360px) {
+                body {
+                    font-size: 0.72em
+                }
+            }/*
+            @media (min-width: 340px) {
+                body {
+                    font-size: 0.72em
+                }
+            }*/
+            @media (min-width: 360px) {
+                body {
+                    font-size: 0.76em
+                }
+            }
+            @media (min-width: 385px) {
+                body {
+                    font-size: 0.80em
+                }
+            }
+            @media (min-width: 400px) {
+                body {
+                    font-size: 0.83em
+                }
+            }
+            @media (min-width: 415px) {
+                body {
+                    font-size: 0.89em
+                }
+            }
+            @media (min-width: 430px) {
+                body {
+                    font-size: 0.92em
+                }
+            }
+            @media (min-width: 445px) {
+                body {
+                    font-size: 0.95em
+                }
+            }
+            @media (min-width: 460px) {
+                body {
+                    font-size: 1em
+                }
+            }
 	    </style>
 	</head>
 	<body>
-		<div class="card">
-			<div class="row first">
-				<div class="left">
-					<div class="sticker red">
-						AD
-					</div>
-					<div class="who">
-						<div class="name">Ashley Donaldson</div>
-						<div class="status light-text">primary</div>
-					</div>
-				</div>
-				<div class="right">
-					<div class="whomwith">
-						<div>David Anderson</div>
-						<div>Julie Acuff</div>
-					</div>	
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="row second">
-				<div class="inner">
-					<div class="from">
-						<span class="time">12:00</span> AM <span class="arrow">&rarr;</span>
-						<div class="date">5/10/17</div>
-					</div>
-					<div class="to">
-						<span class="time">8:00</span> AM
-						<div class="date">5/10/17</div>
-					</div>	
-					<div class="clear"></div>								
-				</div>
-			</div>
-		</div>
+        <div id="container">
+            <div class="card">
+                <div class="row first">
+                    <div class="left">
+                        <div class="sticker red">
+                            AD
+                        </div>
+                        <div class="who">
+                            <div class="name">Ashley Donaldson</div>
+                            <div class="status light-text">primary</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="whomwith">
+                            <div>David Anderson</div>
+                            <div>Julie Acuff</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="row second">
+                    <div class="inner">
+                        <div class="from">
+                            <span class="time">12:00</span> AM <span class="arrow">&rarr;</span>
+                            <div class="date">5/10/17</div>
+                        </div>
+                        <div class="to">
+                            <span class="time">8:00</span> AM
+                            <div class="date">5/10/17</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="card">
-			<div class="row first">
-				<div class="left">
-					<div class="sticker grey">
-						SA
-					</div>
-					<div class="who">
-						<div class="name">Sammual Anderson</div>
-						<div class="status light-text">primary</div>
-					</div>
-				</div>
-				<div class="right">
-					<div class="whomwith">
-						<div>Julie Acuff</div>
-					</div>	
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="row second">
-				<div class="inner">
-					<div class="from">
-						<span class="time">8:00</span> AM <span class="arrow">&rarr;</span>
-						<div class="date">5/10/17</div>
-					</div>
-					<div class="to">
-						<span class="time">4:00</span> PM
-						<div class="date">5/10/17</div>
-					</div>	
-					<div class="clear"></div>								
-				</div>
-			</div>
-		</div>
+            <div class="card">
+                <div class="row first">
+                    <div class="left">
+                        <div class="sticker grey">
+                            SA
+                        </div>
+                        <div class="who">
+                            <div class="name">Sammual Anderson</div>
+                            <div class="status light-text">primary</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="whomwith">
+                            <div>Julie Acuff</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="row second">
+                    <div class="inner">
+                        <div class="from">
+                            <span class="time">8:00</span> AM <span class="arrow">&rarr;</span>
+                            <div class="date">5/10/17</div>
+                        </div>
+                        <div class="to">
+                            <span class="time">4:00</span> PM
+                            <div class="date">5/10/17</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="card">
-			<div class="row first">
-				<div class="left">
-					<div class="sticker green">
-						JA
-					</div>
-					<div class="who">
-						<div class="name">Julie Acuff</div>
-						<div class="status light-text">primary</div>
-					</div>
-				</div>
-				<div class="right">
-					<div class="whomwith">
-						<div>David Anderson</div>
-						<div>Ashley Donaldson</div>
-					</div>	
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="row second">
-				<div class="inner">
-					<div class="from">
-						<span class="time">4:00</span> PM <span class="arrow">&rarr;</span>
-						<div class="date">5/10/17</div>
-					</div>
-					<div class="to">
-						<span class="time">12:00</span> AM
-						<div class="date">5/10/17</div>
-					</div>	
-					<div class="clear"></div>								
-				</div>
-			</div>
-		</div>
+            <div class="card">
+                <div class="row first">
+                    <div class="left">
+                        <div class="sticker green">
+                            JA
+                        </div>
+                        <div class="who">
+                            <div class="name">Julie Acuff</div>
+                            <div class="status light-text">primary</div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="whomwith">
+                            <div>David Anderson</div>
+                            <div>Ashley Donaldson</div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="row second">
+                    <div class="inner">
+                        <div class="from">
+                            <span class="time">4:00</span> PM <span class="arrow">&rarr;</span>
+                            <div class="date">5/10/17</div>
+                        </div>
+                        <div class="to">
+                            <span class="time">12:00</span> AM
+                            <div class="date">5/10/17</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="//localhost:35729/livereload.js"></script>
 	</body>
 </html>
